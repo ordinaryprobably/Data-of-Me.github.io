@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/yes_no.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Choose A Type</title>
+</head>
+<body>
+    <div class="header">
+        <h2 class="title">Scale</h2>
+        <p class="subtitle">Select a number on a scale.</p>
+    </div>
+
+    <div class="yes_no">
+        <input type="text" class="input" placeholder="Write title here... ex) Acne pills.">
+        <hr/>
+        <div class="numbers_row_1">
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+        </div>
+        <div class="numbers_row_2">
+            <div class="numbers_row_2_wrap">
+                <button class="number">6</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+            </div>
+            <button class="number zero">0</button>
+        </div>
+        
+        <div class="number_of_blocks">
+            <h4 class="help_text at">Number of Blocks</h4>
+            <button class="time">-</button>
+            <span class="default_time">8</span>
+            <button class="time">+</button>
+        </div>
+        <span class="span">Min. 2 ~ Max. 10 blocks</span>
+        
+        <div class="number_of_blocks starting_digit">
+            <h4 class="help_text at">Starting digit</h4>
+            <input type="text" class="starting_digit_input" placeholder="ex) 76">
+        </div>
+        <span class="span">The numbers in blocks will increase by 1.</span>
+        <hr/>
+        
+        <h4 class="help_text">Ask me on every:</h4>
+        <div class="week">
+            <button class="day">Mon</button>
+            <button class="day">Tue</button>
+            <button class="day">Wed</button>
+            <button class="day">Thu</button>
+            <button class="day">Fri</button>
+            <button class="day">Sat</button>
+            <button class="day">Sun</button>
+        </div>
+        <div class="set_time">
+            <h4 class="help_text at">at:</h4>
+            <button class="time">-</button>
+            <span class="default_time">8</span>
+            <button class="time">+</button>
+            <button class="time">am</button>
+            <button class="time">pm</button>
+        </div>
+        <hr/>
+        <h4 class="help_text">or,</h4>
+        <button class="btn">I will check it myself</button>
+        <div class="save">
+            <span>*If you don't select either Yes
+                or No, it will be saved as 'No'.</span>
+            <button class="save_btn">save</button>
+        </div>
+    </div>
+</body>
+</html>
