@@ -1,0 +1,210 @@
+:root {
+    --darktext: #343A40;
+    --bluetext: rgb(57, 156, 255);
+    --blurtext: rgb(52, 58, 64, 0.3);
+    --buttontext: rgb(52, 58, 64, 0.8);
+    --buttontextsize: 17px;
+    --buttontextweight: 600;
+    --buttoncolor: #CCCCCC;
+    --inputtextsize: 15px;
+    --greybox: #F8F8F8;
+    --greyerbox: #EFEFEF;
+    --clickeffect: #B2DCFF;
+    --imagesize: 20px;
+}
+
+/* Yes_No.html, Scale.html, Input.html 파일에 적용됨. */
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        background-color: white;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        margin: 30px 0px 0px 0px;
+        color: var(--darktext);
+    }
+
+    .subtitle {
+        margin: 0px;
+        color: var(--blurtext);
+    }
+
+    .yes_no {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90vw;
+        border-radius: 6px;
+        background-color: var(--greybox);
+        margin-bottom: 30px;
+        padding: 15px 0px 15px 0px;
+    }
+    
+    .input {
+        border: none;
+        padding: 13px;
+        margin: 5px 0px 15px 15px;
+        border-radius: 8px;
+        width: 82%;
+        font-size: var(--inputtextsize);
+    }
+
+    .help_text {
+        color: rgb(53, 59, 65, 0.8);
+        margin-left: 15px;
+    }
+
+    .week {
+        margin: 0px 10px 0px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .day {
+        width: 12%;
+        padding: 13px 0px 13px 0px;
+        background: var(--buttoncolor);
+        border-radius: 6px;
+        border: none;
+        margin-right: 5px;
+        color: white;
+        font-weight: var(--buttontextweight);
+        font-size: 15px;
+    }
+
+    .set_time {
+        display: flex;
+        align-items: center;
+    }
+
+    .at {
+        margin-right: 15px;
+    }
+
+    /* -, +, am, pm 버튼 종류 */
+    .time { 
+        border: none;
+        font-size: 18px;
+        margin-right: 10px;
+        font-weight: 700;
+        color: rgb(182, 182, 182);
+        background-color: var(--greybox);
+    } 
+
+    .time:active {
+        color: var(--clickeffect);
+    }
+
+    .default_time {
+        margin-right: 10px;
+        font-weight: 500;
+        color: rgb(182, 182, 182);
+        font-size: var(--buttontextsize);
+    }
+
+    hr {
+        width: 90%;
+        border: solid 1px var(--greyerbox);
+    }
+
+    .btn {
+        width: 60%;
+        padding: 10px;
+        background: var(--buttoncolor);
+        border-radius: 6px;
+        border: none;
+        margin: 0px 5px 35px 15px;
+        color: white;
+        font-size: var(--buttontextsize);
+        font-weight: var(--buttontextweight);
+    }
+    
+    .save {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 10px 10px 15px;
+    }
+
+    .save span {
+        color: var(--blurtext);
+    }
+
+    .save_btn {
+        padding: 10px;
+        background: var(--buttoncolor);
+        border-radius: 6px;
+        border: none;
+        font-size: var(--buttontextsize);
+        font-weight: var(--buttontextweight);
+        color: white;
+    }
+
+    /* Scale.html 부분 추가 */
+
+    .numbers_row_1, .numbers_row_2_wrap {
+        display: flexbox;
+        justify-content: flex-start;
+        margin-left: 15px;
+        width: 90%;
+    }
+
+    .numbers_row_1 {
+        margin-top: 15px;
+    }
+
+    .numbers_row_2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 15px 5px 0px;
+    }
+
+    .number {
+        background: white;
+        border-radius: 6px;
+        border: none;
+        padding: 10px 14px 10px 14px;
+        /* margin-right: 5px; */
+        color: var(--buttontext);
+        font-size: var(--buttontextsize);
+        font-weight: var(--buttontextweight);
+    }
+
+    .number_of_blocks, .starting_digit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .starting_digit_input {
+        border: none;
+        padding: 13px;
+        margin: 0px 15px 0px 15px;
+        border-radius: 8px;
+        width: 20%;
+        font-size: var(--inputtextsize);
+    }
+
+    .span {
+        margin: 0px 0px 25px 15px;
+        color: var(--blurtext);
+        font-size: var(--inputtextsize);
+    }
+
+    
+
+
+}

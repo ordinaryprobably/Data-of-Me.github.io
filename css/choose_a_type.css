@@ -1,0 +1,155 @@
+:root {
+    --darktext: #343A40;
+    --bluetext: rgb(57, 156, 255);
+    --blurtext: rgb(52, 58, 64, 0.3);
+    --buttontext: rgb(52, 58, 64, 0.8);
+    --buttontextsize: 17px;
+    --buttontextweight: 600;
+    --buttoncolor: #CCCCCC;
+    --inputtextsize: 15px;
+    --greybox: #F8F8F8;
+    --greyerbox: #EFEFEF;
+    --clickeffect: #B2DCFF;
+    --imagesize: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        background-color: white;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin-bottom: 30px;
+    }
+
+    .fix {
+        position: absolute;
+        right: 12px;
+        top: 40px;
+    }
+
+    .title {
+        margin: 30px 0px 0px 0px;
+        color: var(--darktext);
+    }
+
+    .subtitle {
+        margin: 0px;
+        color: var(--blurtext);
+    }
+
+    .yes_no, .scale, .input {
+        border-radius: 6px;
+        background-color: var(--greybox);
+        margin-bottom: 30px;
+        padding-bottom: 5px;
+    }
+
+    .label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        border: none;
+        padding: 0px 15px 0px 15px;
+        font-size: 15px;
+        margin: 0px;
+        height: 40px;
+        border-radius: 6px 6px 0px 0px;
+        background-color: var(--greyerbox);
+        color: var(--bluetext);
+    }
+
+    .label:active {
+        background-color: var(--clickeffect);
+    }
+
+    .label:hover {
+        background-color: var(--clickeffect);
+        transform: transition;
+    }
+
+    .arrow {
+        width: var(--imagesize);
+        height: var(--imagesize);
+        transform: scaleX(-1);
+    }
+
+    .data_name {
+        margin: 10px 0px 0px 15px;
+        color: var(--blurtext);
+    }
+
+    .data_detail {
+        margin: 5px 0px 20px 15px;
+        color: var(--blurtext);
+    }
+
+    .choice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+
+    .yes, .no {
+        background: white;
+        border-radius: 4px;
+        border: none;
+        width: 43%;
+        height: 40px;
+        margin: 0px;
+        color: var(--blurtext);
+        font-size: 17px;
+        font-weight: bold;
+    } 
+
+    .yes:active, .no:active {
+        background-color: var(--clickeffect);
+    }
+
+    .numbers_row_1, .numbers_row_2_wrap {
+        display: flexbox;
+        justify-content: flex-start;
+        margin-left: 15px;
+        width: 90%;
+    }
+
+    .numbers_row_2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 15px 5px 0px;
+    }
+
+    .number {
+        background: white;
+        border-radius: 6px;
+        border: none;
+        padding: 10px 14px 10px 14px;
+        /* margin-right: 5px; */
+        color: var(--blurtext);
+        font-size: var(--buttontextsize);
+        font-weight: var(--buttontextweight);
+    }
+
+    .text_input {
+        border: none;
+        padding: 13px;
+        margin: 0px 0px 15px 15px;
+        border-radius: 8px;
+        width: 82%;
+        font-size: var(--inputtextsize);
+
+    }
+
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/choose_a_type.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Choose A Type</title>
+</head>
+<body>
+    <div class="header">
+        <h2 class="title">Choose A Type</h2>
+        <p class="subtitle">To record your data.</p>
+    </div>
+    
+    <div class="choices">
+        <div class="yes_no">
+            <button class="label" type="button" onclick="location.href='Yes_No.html'">
+                <h4 class="type">Yes / No</h4>
+                <img src="img/arrow-left-c.svg" alt="" class="arrow">
+            </button>
+            <h4 class="data_name">ex) Acne pills</h4>
+            <p class="data_detail">ex) Ask everyday</p>
+            <div class="choice">
+                <button class="yes">yes</button>
+                <button class="no">no</button>
+            </div>
+        </div>
+
+        <div class="scale">
+            <button class="label" type="button" onclick="location.href='Scale.html'">
+                <h4 class="type">Scale</h4>
+                <img src="img/arrow-left-c.svg" alt="" class="arrow">
+            </button>
+            <h4 class="data_name">ex) Pimples grew today</h4>
+            <p class="data_detail">ex) Ask everyday</p>
+            <div class="numbers_row_1">
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+            </div>
+            <div class="numbers_row_2">
+                <div class="numbers_row_2_wrap">
+                    <button class="number">6</button>
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                </div>
+                <button class="number zero">0</button>
+            </div>
+        </div>
+
+        <div class="input">
+            <button class="label" type="button" onclick="location.href='input.html'">
+                <h4 class="type">Input</h4>
+                <img src="img/arrow-left-c.svg" alt="" class="arrow">
+            </button>
+            <h4 class="data_name">ex) Pimples grew today</h4>
+            <p class="data_detail">ex) Ask everyday</p>
+            <input type="text" class="text_input" placeholder="Submit a number.">
+        </div>
+    </div>
+
+
+</body>
+</html>
